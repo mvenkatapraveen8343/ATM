@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% set title = "Create Account" %}
+{% set css_file = "create.css" %}
+
+{% block content %}
+<h1 style="text-align: center;">Create Account</h1>
+{% if message %}
+<p class="{{msg_type}}">{{message}}</p>
+{% endif %}
+<form method="post" action="/create">
+    <label>Account No:</label>
+    <input type="text" name="acc_no" required>
+    <label>Name:</label>
+    <input type="text" name="name" required>
+    <label>Initial Balance:</label>
+    <input type="number" name="balance" step="0.01" required>
+    <input type="submit" value="Create">
+</form>
+{% endblock %}

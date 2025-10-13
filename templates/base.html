@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title or "ATM App" }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = css_file) }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar" >
+            <h2><div class="brand">ATM Web App</div></h2>
+            <div class="nav-links">
+                <h3>
+                <a href="/">Home</a>
+                <a href="/create">Create</a>
+                <a href="/balance">Balance</a>
+                <a href="/update">Update</a>
+                <a href="/delete">Delete</a>
+                </h3>
+            </div>
+        </nav>
+    </header>
+
+        <main>
+
+            {% block content %}{% endblock %}
+
+        </main>
+
+        
+    <footer>
+        <p>&copy; 2025 ATM System | Developed by Praveen</p>
+    </footer>
+</body>
+</html>

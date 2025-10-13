@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% set title = "Home" %}
+{% set css_file = "home.css" %}
+
+{% block content %}
+<h1 style="text-align: center;">Welcome to the ATM App</h1>
+
+{% if accounts %}
+    <ul>
+        {% for account in accounts %}
+            <li>
+                <strong>{{ loop.index }}. {{ account.Acc_No }}</strong>: 
+                {{ account.Name }} – ₹{{ account.Balance }}
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No accounts available.</p>
+{% endif %}
+{% endblock %}

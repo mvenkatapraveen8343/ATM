@@ -1,0 +1,91 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1efee;
+    margin: 0;
+}
+.brand{
+    margin-left: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+.navbar {
+    background-color: #e07c0a;
+    color: white;
+    padding: 0px 30px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    text-align: end;
+    margin: 10px 30px;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    margin: 40px auto;
+    margin-top: 75px;
+    padding: 30px;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+form input[type="text"] {
+    width: 95%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form input[type="submit"] {
+    background: #e07c0a;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+form input[type="submit"]:hover {
+    background: #b36b05;
+}
+
+footer {
+    background-color: #e07c0a;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.success {
+    color: green;
+    text-align: center;
+}
+.error {
+    color: red;
+    text-align: center;
+}
