@@ -42,6 +42,7 @@ main {
     margin-top: 75px;
     padding: 30px;
     max-width: 500px;
+    min-height: 300px;
     border-radius: 12px;
     box-shadow: 0 0 12px rgba(0,0,0,0.2);
 }
