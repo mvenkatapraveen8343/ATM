@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e8f8f5;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.navbar .brand {
+    font-weight: bolder;
+}
+
+.navbar .brand:hover {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #0a7ef1;
+    color: white;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    text-align: end;
+    margin: 10px 30px;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: #fff;
+    margin: 40px auto;
+    margin-top: 75px;
+    padding: 30px;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    background: #ecf0f1;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+footer {
+    background-color: #0a7ef1;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.success {
+    color: green;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+body.create {
+    background-color: #e8f8f5;
+}
+
+body.create .navbar,
+body.create footer {
+    background-color: rgb(19, 145, 17);
+}
+
+body.create form input[type="text"],
+body.create form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+body.create form input[type="submit"] {
+    background: rgb(19, 145, 17);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+body.create form input[type="submit"]:hover {
+    background: rgb(4, 121, 2);
+}
+
+body.balance {
+    background-color: #e8f8f5;
+}
+
+body.balance .navbar,
+body.balance footer {
+    background-color: #d57508;
+}
+
+body.balance form input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+body.balance form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #d57508;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+body.balance form input[type="submit"]:hover {
+    background: #b36b05;
+}
+
+body.update {
+    background: #e8f8f5;
+}
+
+body.update .navbar,
+body.update footer {
+    background-color: #008080;
+}
+
+.update-form .form-group {
+    margin-bottom: 20px;
+}
+
+.update-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.update-form input[type="text"],
+.update-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    transition: background 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn.deposit {
+    background-color: #28a745;
+}
+
+.btn.deposit:hover {
+    background-color: #218838;
+}
+
+.btn.withdraw {
+    background-color: #dc3545;
+}
+
+.btn.withdraw:hover {
+    background-color: #c82333;
+}
+
+body.update form input[type="submit"] {
+    background: #2e86c1;
+    color: white;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body.update form input[type="submit"]:hover {
+    background: #21618c;
+}
+
+body.delete {
+    background-color: #e8f8f5;
+}
+
+body.delete .navbar,
+body.delete footer {
+    background-color: #cd0808;
+}
+
+body.delete form input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+body.delete form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #cd0808;
+    color: white;
+    cursor: pointer;
+    border: none;
+    box-sizing: border-box;
+}
+
+body.delete form input[type="submit"]:hover {
+    background: #a20413;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="submit"],
+.update-form .btn {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+    body {
+        margin-top: 200px;
+        padding-bottom: 60px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        box-sizing: border-box;
+        padding: 10px 15px;
+    }
+
+    .navbar .brand {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .nav-links {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar a {
+        margin: 0;
+        font-size: 0.95rem;
+        padding: 5px 8px;
+    }
+
+    main {
+        margin: 50px 15px;
+        padding: 35px;
+        max-width: 100%;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 12px 10px;
+        z-index: 1000;
+    }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 991px) {
+    body {
+        padding-top: 100px;
+        padding-bottom: 70px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        box-sizing: border-box;
+        padding: 10px 25px;
+    }
+
+    .navbar .brand {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .nav-links {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar a {
+        margin: 0;
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+
+    main {
+        margin: 0 auto;
+        padding: 30px;
+        max-width: 85%;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        box-sizing: border-box;
+    }
+}

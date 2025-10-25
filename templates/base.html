@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename = css_file) }}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="{{ page_class or '' }}">
     <header>
         <nav class="navbar" >
-            <h2><div class="brand">ATM Web App</div></h2>
+            <h2><a href="/" class="brand">ATM Web App</a></h2>
             <div class="nav-links">
                 <h3>
                 <a href="/">Home</a>

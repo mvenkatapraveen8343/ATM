@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 {% set title = "Delete Account" %}
-{% set css_file = "delete.css" %}
+{% set css_file = "base.css" %}
+{% set page_class = "delete" %}
 
 {% block content %}
 <h1 style="text-align: center;">Delete Account</h1>
 {% if message %}
-<p class="{{msg_type}}">{{message}}</p>
+<p class="{{ msg_type }}">{{ message }}</p>
 {% endif %}
 <form method="post" onsubmit="return confirm('Are you sure you want to delete this account?');">
     <label>Account No:</label>

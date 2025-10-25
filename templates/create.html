@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 {% set title = "Create Account" %}
-{% set css_file = "create.css" %}
+{% set css_file = "base.css" %}
+{% set page_class = "create" %}
 
 {% block content %}
 <h1 style="text-align: center;">Create Account</h1>
 {% if message %}
-<p class="{{msg_type}}">{{message}}</p>
+<p class="{{ msg_type }}">{{ message }}</p>
 {% endif %}
 <form method="post" action="/create">
     <label>Account No:</label>
