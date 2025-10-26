@@ -15,6 +15,20 @@ db_config = {
 def get_db_connection():
     return pymysql.connect(**db_config)
 
+def db_init():
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS Accounts (
+            Acc_No VARCHAR(20) PRIMARY KEY,
+            Name VARCHAR(100) NOT NULL,
+            Balance DECIMAL(15,2) NOT NULL CHECK (Balance >= 0)
+        )
+    """)
+    conn.commit()
+    cursor.close()
+    conn.close()
+
 @app.route('/')
 @app.route('/home')
 def home():
@@ -147,4 +161,5 @@ def deletepage():
     return render_template('delete.html')
 
 if __name__ == '__main__':
+    db_init()
     app.run(debug=True)
